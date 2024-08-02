@@ -35,10 +35,10 @@ export default function AboutUs() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Masync AI - Redefining Content Creation
+             AI - Redefining Content Creation
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Masync AI is revolutionizing the way content is created. Our
+             AI is revolutionizing the way content is created. Our
             cutting-edge AI technology automates and enhances content
             generation, enabling creators to produce high-quality, engaging
             material with ease.

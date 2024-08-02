@@ -7,6 +7,7 @@ import { useMutation } from "@tanstack/react-query";
 import { loginAPI } from "../../apis/users/usersAPI";
 import { useAuth } from "../../AuthContext/AuthContext";
 
+import Login_Regis from "../../assets/Login_Regis.jpg"
 // Validation schema using Yup
 const validationSchema = Yup.object({
   email: Yup.string()
@@ -43,9 +44,9 @@ const Login = () => {
   }, [mutation.isSuccess, login, navigate]);
 
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-      <div className="max-w-md w-full bg-white rounded-lg shadow-md p-8 m-4">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center" style={{ backgroundImage: `url(${Login_Regis})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="max-w-md w-full  bg-opacity-80 rounded-lg shadow-md p-8 m-4">
+        <h2 className="text-2xl font-bold text-center  text-white mb-8">
           Login to Your Account
         </h2>
         {mutation.isPending && <StatusMessage type="loading" message="Loading..." />}
@@ -56,7 +57,7 @@ const Login = () => {
           <div>
             <label
               htmlFor="email"
-              className="text-sm font-medium text-gray-700 block mb-2"
+              className="text-sm font-bold text-white block mb-2"
             >
               Your Email
             </label>
@@ -76,7 +77,7 @@ const Login = () => {
           <div>
             <label
               htmlFor="password"
-              className="text-sm font-medium text-gray-700 block mb-2"
+              className="text-sm font-bold text-white block mb-2"
             >
               Your Password
             </label>

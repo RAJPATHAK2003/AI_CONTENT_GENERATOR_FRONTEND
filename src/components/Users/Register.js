@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useMutation } from '@tanstack/react-query';
 import { registerAPI } from '../../apis/users/usersAPI';
 import StatusMessage from "../Alert/StatusMessage";
-
+import Login_Regis from "../../assets/Login_Regis.jpg"
 
 // Validation schema
 const validationSchema = Yup.object({
@@ -46,12 +46,13 @@ const Registration = () => {
   });
 console.log(mutation);
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
-      <div className="max-w-md w-full bg-white rounded-lg shadow-md p-8 m-4">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">
+    
+    <div className="min-h-screen flex items-center justify-center " style={{ backgroundImage: `url(${Login_Regis})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="max-w-md w-full  bg-opacity-80 rounded-lg shadow-md p-8 m-4">
+        <h2 className="text-2xl font-bold text-center text-white mb-8">
           Create an Account
         </h2>
-        <p className="text-center text-gray-600 mb-4">
+        <p className="text-center text-white font-bold mb-4">
           Create an account to get free access for 3 days. No credit card
           required.
         </p>
@@ -62,7 +63,7 @@ console.log(mutation);
           <div>
             <label
               htmlFor="username"
-              className="text-sm font-medium text-gray-700 block mb-2"
+              className="text-sm font-medium text-white block mb-2"
             >
               Username
             </label>
@@ -82,7 +83,7 @@ console.log(mutation);
           <div>
             <label
               htmlFor="email"
-              className="text-sm font-medium text-gray-700 block mb-2"
+              className="text-sm  text-white font-bold block mb-2"
             >
               Email Address
             </label>
@@ -102,7 +103,7 @@ console.log(mutation);
           <div>
             <label
               htmlFor="password"
-              className="text-sm font-medium text-gray-700 block mb-2"
+              className="text-sm font-bold text-white block mb-2"
             >
               Password
             </label>
@@ -110,7 +111,8 @@ console.log(mutation);
               type="password"
               id="password"
               {...formik.getFieldProps("password")}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500"
+              className="w-full px-4 py-2 border border-gray-400 rounded-md text-sm shadow-sm placeholder-gray-500 focus:outline-none focus:border-indigo-600"
+
             />
             {formik.touched.password && formik.errors.password && (
               <div className="text-red-500 mt-1">{formik.errors.password}</div>
