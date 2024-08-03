@@ -4,7 +4,7 @@ import axios from "axios";
 export const generatedContentAPI = async (userPromt) => {
     try {
         const response = await axios.post(
-            "http://localhost:8090/api/v1/openai/generate-content",
+            "https://ai-content-generator-backend.onrender.com/api/v1/openai/generate-content",
             {
                 prompt:userPromt,
             },

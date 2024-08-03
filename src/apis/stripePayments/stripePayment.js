@@ -4,7 +4,7 @@ import axios from "axios";
 export const handleFreeSubscriptionAPI = async (userPromt) => {
     try {
         const response = await axios.post(
-            "http://localhost:8090/api/v1/stripe/free-plan",
+            "https://ai-content-generator-backend.onrender.com/api/v1/stripe/free-plan",
             {
                 
             },
