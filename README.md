@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# MERN Stack AI Content Generation Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a MERN stack project designed for AI content generation using the OpenAI API. The application features user authentication and authorization, Stripe payment integration, and a user dashboard. This project demonstrates the use of modern web technologies to build a scalable and interactive content generation platform.
+## Project Demo
 
-In the project directory, you can run:
+Click the image below to watch the video:
 
-### `npm start`
+[![Watch the video](https://github.com/user-attachments/assets/98753998-ce20-484c-9eb7-c82673358961)](https://youtu.be/hcJgZDJMNJ8)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **AI Content Generation**: Leverages the OpenAI API to generate content based on user input.
+- **User Authentication & Authorization**: Secure login and registration system with role-based access control.
+- **Stripe Integration**: Allows users to make payments for premium features and subscriptions.
+- **User Dashboard**: Provides users with an interactive interface to manage their content and view payment history.
+- **Responsive Design**: Ensures the application is usable on both desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Payment Gateway**: Stripe
+- **Authentication**: JWT (JSON Web Tokens)
+- **AI API**: OpenAI API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (>= 14.x)
+- MongoDB
+- Stripe Account
+- OpenAI API Key
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    git clone https://github.com/yourusername/your-repository.git
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Navigate to the Project Directory:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    cd your-repository
+    ```
 
-## Learn More
+3. **Install Backend Dependencies:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd backend
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Install Frontend Dependencies:**
 
-### Code Splitting
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Set Up Environment Variables:**
 
-### Analyzing the Bundle Size
+    Create a `.env` file in the `backend` directory and add the following variables:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```
+    PORT=8090
+    MONGODB_URI=MONGO_ATLAS
+    JWT_SECRET=your-jwt-secret
+    STRIPE_SECRET_KEY=your-stripe-secret-key
+    OPENAI_API_KEY=your-openai-api-key
+    ```
 
-### Making a Progressive Web App
+    Create a `.env` file in the `frontend` directory and add the following variable:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```
+    REACT_APP_API_URL=http://localhost:3000
+    ```
 
-### Advanced Configuration
+6. **Start the Application:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    - **Start Backend Server:**
 
-### Deployment
+      ```bash
+      cd backend
+      npm start
+      ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    - **Start Frontend Server:**
 
-### `npm run build` fails to minify
+      ```bash
+      cd ../frontend
+      npm start
+      ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Usage
+
+1. **Navigate to the Application in Your Browser:**
+
+   Open `http://localhost:3000` to access the application.
+
+2. **Create an Account or Log In:**
+
+   Use the authentication system to create a new account or log in with existing credentials.
+
+3. **Explore Features:**
+
+   - Generate AI content using the provided interface.
+   - Make payments through Stripe for premium features.
+   - Manage your content and view payment history on the dashboard.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and create a pull request. Ensure that your changes are well-documented and tested.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any questions or inquiries, please contact [rp9936123@gmail.com.com].
+
